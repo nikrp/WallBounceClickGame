@@ -76,7 +76,7 @@ public class Main extends JPanel implements MouseListener, ActionListener {
 		g.drawImage(image, rectX, rectY, 50, 50, this);
 		
 		g.setColor(Color.RED);
-		for (int i = 50; i < (lives * 50) + 50; i += 50) {
+		for (int i = 50; i < ((lives * 50) + 50); i += 50) {
 			this.drawHeart(g, i, 50, 25, 25);
 		}
 	}
@@ -109,7 +109,7 @@ public class Main extends JPanel implements MouseListener, ActionListener {
 	        if (randomNum == 0) this.rxpm *= -1;
 	        else this.rypm *= -1;
 	        
-	        rxpm = (rxpm < 0) ? rxpm - 0.25 : rxpm + 0.25; rypm = (rypm < 0 ? rypm - 0.25 : rypm + 0.25); score++;
+	        rxpm = (rxpm < 0) ? rxpm - 0.35 : rxpm + 0.35; rypm = (rypm < 0 ? rypm - 0.35 : rypm + 0.35); score++;
 	        scoreLabel.setText("Score: " + score);
 	    } else {
 	    	lives--;
